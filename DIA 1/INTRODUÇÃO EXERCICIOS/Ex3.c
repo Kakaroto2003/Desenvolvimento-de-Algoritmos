@@ -1,0 +1,2 @@
+// Escreva um algoritmo que solicite para o usuário o ano atual e o ano de vencimento de um produto. Mostre uma mensagem
+// dizendo se o produto está vencido e deve ser descartado ou se o produto está dentro da validade e pode ser consumido.
