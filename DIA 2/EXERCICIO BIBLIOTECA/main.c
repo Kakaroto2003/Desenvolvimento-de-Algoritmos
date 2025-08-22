@@ -6,26 +6,23 @@
 #include "numeros.h"
 
 int main() {
-    int a = 7, b = 4;
+    int a = 10;
+    int b = 7;
 
-    
-    printf("%d é par? %s\n", a, ehPar(a) ? "Sim" : "Não");
-    printf("%d é par? %s\n", b, ehPar(b) ? "Sim" : "Não");
+    printf("%d e par? %s\n", a, ehPar(a) ? "Sim" : "Nao");
+    printf("%d e par? %s\n", b, ehPar(b) ? "Sim" : "Nao");
 
-    
-    printf("%d é primo? %s\n", a, ehPrimo(a) ? "Sim" : "Não");
-    printf("%d é primo? %s\n", b, ehPrimo(b) ? "Sim" : "Não");
+    printf("%d e primo? %s\n", a, ehPrimo(a) ? "Sim" : "Nao");
+    printf("%d e primo? %s\n", b, ehPrimo(b) ? "Sim" : "Nao");
 
-    
-    printf("Fatorial de %d = %llu\n", a, fatorial(a));
-    printf("Fatorial de %d = %llu\n", b, fatorial(b));
+    printf("Fatorial de %d: %d\n", a, fatorial(a));
+    printf("Fatorial de %d: %d\n", b, fatorial(b));
 
-    
-    printf("Maior entre %d e %d = %d\n", a, b, maior(a, b));
+    printf("Maior entre %d e %d: %d\n", a, b, maior(a, b));
 
-    
-    printf("%d elevado a %d = %d\n", a, b, potencia(a, b));
-    printf("%d elevado a %d = %d\n", b, 3, potencia(b, 3));
+    printf("%d elevado a %d: %d\n", a, b, potencia(a, b));
+    printf("%d elevado a %d: %d\n", b, 3, potencia(b, 3));
 
+    system("pause");
     return 0;
 }

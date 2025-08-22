@@ -4,37 +4,44 @@
 
 #include "numeros.h"
 
-
-int ePar(int n) {
+int ehPar(int n) {
     return n % 2 == 0;
 }
 
-int ePrimo(int n) {
+int ehPrimo(int n) {
     if (n < 2) return 0;
-    for (int i = 2; i * i <= n; i++) {
+
+    int i;
+    for (i = 2; i * i <= n; i++) {
         if (n % i == 0) return 0;
     }
     return 1;
 }
 
-
 int fatorial(int n) {
     if (n < 0) return 0;
+
     int resultado = 1;
-    for (int i = 2; i <= n; i++) {
+    int i;
+    for (i = 2; i <= n; i++) {
         resultado *= i;
     }
     return resultado;
 }
 
-
 int maior(int a, int b) {
-    return (a > b) ? a : b;
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
 }
+
 
 int potencia(int base, int expoente) {
     int resultado = 1;
-    for (int i = 0; i < expoente; i++) {
+    int i;
+    for (i = 0; i < expoente; i++) {
         resultado *= base;
     }
     return resultado;
